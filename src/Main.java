@@ -1,4 +1,6 @@
+import Homework5.Task1;
 import Homework5.Task2;
+
 
 public class Main {
     public static void main(String[] args) {
@@ -20,9 +22,11 @@ public class Main {
                 "Мария Рыкова",
                 "Анна Крутова",
                 "Марина Лугова",
+                "Иван Иванов",
                 "Анна Владимирова",
                 "Петр Лыков",
                 "Иван Мечников",
+                "Иван Иванов",
                 "Петр Петин",
                 "Петр Лыков",
                 "Кристина Белова",
@@ -31,9 +35,9 @@ public class Main {
                 "Иван Ежов"
         };
 
-        //System.out.println(Task2.getArrayOfNames(listOfEmployees));
-        //System.out.println(Task2.getMapNamesAndCount(Task2.getArrayOfNames(listOfEmployees)));
         Task2.sortedMap(Task2.getMapNamesAndCount(Task2.getArrayOfNames(listOfEmployees)));
+        System.out.println("\n");
+        Task1.printAllContacts(Task1.getNamesAndPhone());
     }
 
 }
